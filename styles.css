@@ -1,0 +1,15 @@
+.text-center {
+    margin: auto; 
+     
+}
+
+.title {
+    text-align: center;
+    color: blue;
+    margin: 1rem;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    position: relative; 
+}
