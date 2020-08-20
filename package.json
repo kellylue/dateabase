@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/kellylue/dateabase/issues"
   },
-  "homepage": "https://github.com/kellylue/dateabase#readme"
+  "homepage": "https://github.com/kellylue/dateabase#readme",
+  "dependencies": {
+    "apis": "^0.1.2",
+    "google": "^2.1.0"
+  }
 }
