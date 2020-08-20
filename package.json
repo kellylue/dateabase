@@ -1,0 +1,19 @@
+{
+  "name": "dateabase",
+  "version": "1.0.0",
+  "description": "A website for Ben and Kelly!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kellylue/dateabase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kellylue/dateabase/issues"
+  },
+  "homepage": "https://github.com/kellylue/dateabase#readme"
+}
