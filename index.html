@@ -8,6 +8,7 @@
 
     <!--stylesheets-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
 
     <!--include bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,18 +18,31 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-default navbar-light" style="background-color: paleturquoise">
-            <a class="navbar-brand" href="#" 
-            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-            Dateabase</a>
+    <section>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Timeline</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        </nav>
-    </div>
-    <div class="text-center">
-        <h1 class="title">Dateabase</h1>
-        <button type="button" class="btn btn-primary btn-lg">Generate Date</button>
-    </div>
-    
+      <div class="showcase">
+          <div class="container showcase-inner">
+          </div>
+      </div>
+
+        <h1>Dateabase</h1>
+    </section> 
 </body>
 </html>

@@ -1,15 +1,48 @@
-.text-center {
-    margin: auto; 
-     
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
-.title {
-    text-align: center;
-    color: blue;
-    margin: 1rem;  
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+html {
+    font-size: 10px; 
+    font-family: 'Roboto', sans-serif; 
 }
 
-.btn {
+section{
+    width: 100%; 
+    height: 100vh; 
+    color: #fff;
+    background: linear-gradient(-45deg, #FFC13D, #ECA39D, #668CFF, #18288D); 
+    background-size: 400% 400%; 
     position: relative; 
+    animation: animateBackground 10s ease-in-out infinite; 
 }
+
+h1 {
+    font-size: 10rem; 
+    text-transform: uppercase;
+    letter-spacing: 10px; 
+    border: 3px solid #fff; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 5rem 8rem; 
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0 50%; 
+
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0 50%; 
+    }
+}
+
