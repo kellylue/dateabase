@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 10px; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+body {
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section{
+    width: 100%; 
+    height: 100vh; 
+    color: #fff;
+    background: linear-gradient(-45deg, #FFC13D, #ECA39D, #668CFF, #18288D); 
+    background-size: 400% 400%; 
+    position: relative; 
+    animation: animateBackground 10s ease-in-out infinite; 
+    display: flex; 
+    flex: center; 
+}
+
+h1 {
+    font-size: 10rem; 
+    text-transform: uppercase;
+    letter-spacing: 10px; 
+    border: 3px solid #fff; 
+    position: absolute; 
+    top: 43%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 5rem 8rem; 
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    margin: auto; 
+    width: 100%;
+    top: 55%; 
+}
+
+.btn {
+    margin: 1em; 
+    color: #fff !important; 
+    border-radius: 0 !important; 
+    background-color: transparent !important; 
+    font-family: 'Roboto', sans-serif !important; 
+}
+
+.btn:hover {
+    background-color: grey !important; 
+    opacity: 25% !important; 
+    color: #fff !important; 
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0 50%; 
+
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0 50%; 
+    }
+}
+
+/* about page style */ 
+h2 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: xx-large !important;  
+    text-transform: uppercase; 
+    letter-spacing: 10px; 
+    position: relative; 
+    padding: 3rem 8rem; 
+    text-align: center;
+    top: 30%; 
+}
+
+p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: small; 
+    position: relative; 
+    text-align: center; 
+    top: 35%; 
+}
+
+/* timeline page style */ 
+.timeline-heading {
+    font-family: 'Roboto', sans-serif; 
+    font-size: xx-large !important;  
+    text-transform: uppercase; 
+    letter-spacing: 10px; 
+    position: relative; 
+    padding: 3rem 8rem; 
+    text-align: center;
+    top: 0; 
+}
+
+.container .title { 
+    font-weight: bold;  
+    text-transform: uppercase; 
+    font-size: large; 
+}
+
+.container {
+    margin: 40px 40px; 
+
+}
+
+.container ul {
+    list-style: none !important; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: medium; 
+    position: relative; 
+}
+
+.container ul:before {
+    content: '  '; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 2px; 
+    height: 100%; 
+    border: 1px dashed #eee; 
+}
+
+.container ul li {
+    margin: 30px 50px; 
+    position: relative; 
+
+}
+
+.container ul li:before {
+    content: '  '; 
+    position: absolute; 
+    top: 0; 
+    left: -60px; 
+    width: 2px; 
+    height: 100%; 
+    border: 1px solid #eee; 
+}
+
+
+
+
+

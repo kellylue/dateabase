@@ -7,27 +7,52 @@
     <title>Dateabase</title>
 
     <!--stylesheets-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./FrontEnd/styles.css">
+    <link rel="stylesheet" href="./FrontEnd/menu.css">
 
     <!--include bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--animate on scroll library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-default navbar-light" style="background-color: paleturquoise">
-            <a class="navbar-brand" href="#" 
-            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-            Dateabase</a>
-        </nav>
-    </div>
-    <div class="text-center">
-        <h1 class="title">Dateabase</h1>
-        <button type="button" class="btn btn-primary btn-lg">Generate Date</button>
-    </div>
-    
+    <section>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/timeline">Timeline</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Dateabase</h1>
+        <div class="buttons">
+            <button type="button" class="btn btn-light btn-lg">Generate Date</button>
+            <button type="button" class="btn btn-light btn-lg">See All Dates</button>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
