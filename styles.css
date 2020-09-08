@@ -119,6 +119,52 @@ p {
     top: 0; 
 }
 
+.container .title { 
+    font-weight: bold;  
+    text-transform: uppercase; 
+    font-size: large; 
+}
+
+.container {
+    margin: 40px 40px; 
+
+}
+
+.container ul {
+    list-style: none !important; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: medium; 
+    position: relative; 
+}
+
+.container ul:before {
+    content: '  '; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 2px; 
+    height: 100%; 
+    border: 1px dashed #eee; 
+}
+
+.container ul li {
+    margin: 30px 50px; 
+    position: relative; 
+
+}
+
+.container ul li:before {
+    content: '  '; 
+    position: absolute; 
+    top: 0; 
+    left: -60px; 
+    width: 2px; 
+    height: 100%; 
+    border: 1px solid #eee; 
+}
+
 
 
 
