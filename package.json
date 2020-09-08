@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kellylue/dateabase#readme",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "apis": "^0.1.2",
     "google": "^2.1.0"
   }
