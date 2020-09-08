@@ -9,9 +9,10 @@ const NODE_SHEETS_TEST = '1miz6FabnPYH4IL67V3yCD5oUQtMV4X78Sn5XbOyPHxc';
 
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-app.use(express.static('.'));
+//ben's code: app.use(express.static('.'));
+app.use(express.static(__dirname)); 
 
 app.get('/', (req, res) => {
 	res.sendFile('/index.html', { root: __dirname });
