@@ -54,7 +54,7 @@ client.authorize(function (err, tokens) {
 	}
 	else {
 		console.log('Connected!');
-		gsrun(client);
+		// gsrun(client);
 	}
 
 });
