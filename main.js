@@ -14,7 +14,16 @@ const port = 3000;
 app.use(express.static('.'));
 
 app.get('/', (req, res) => {
-	res.sendFile('./index.html')
+	res.sendFile('/index.html', { root: __dirname });
+});
+app.get('/about', (req, res) => {
+	res.sendFile('/FrontEnd/about.html', { root: __dirname });
+});
+app.get('/contact', (req, res) => {
+	res.sendFile('/FrontEnd/contact.html', { root: __dirname });
+});
+app.get('/timeline', (req, res) => {
+	res.sendFile('/FrontEnd/timeline.html', { root: __dirname });
 });
 
 app.get('/abc', (req, res) => {
