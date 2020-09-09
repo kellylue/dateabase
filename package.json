@@ -2,7 +2,7 @@
   "name": "dateabase",
   "version": "1.0.0",
   "description": "A website for Ben and Kelly!",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
     "start": "node main.js"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kellylue/dateabase#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "googleapis": "^39.2.0"
   }
