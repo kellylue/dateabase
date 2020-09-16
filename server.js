@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
-const gsrun = require('./gsheets.js')
+const Sheets = require('./sheets.js');
 
 app.use(express.static(__dirname));
+
 
 app.get('/', (req, res) => {
 	res.sendFile('/index.html', { root: __dirname });
@@ -26,5 +27,10 @@ app.listen(port, () => {
 	console.log(`App listening at http://localhost:${port}`)
 });
 
+Sheets.createAuth()
+Sheets.accessSheetsTest();
 
-gsrun();
+(async function () {
+	const dates = await Sheets.loadAllDates()
+	console.log(dates[0])
+})()

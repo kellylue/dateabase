@@ -4,7 +4,7 @@
   "description": "A website for Ben and Kelly!",
   "main": "server.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
